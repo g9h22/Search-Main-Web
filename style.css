@@ -25,11 +25,10 @@ main .popUp .weatherView, main .popUp .memoView, main .popUp .nftView {
 
 body {
   margin: 0;
+  padding: 0;
   color: white;
   size: 20px;
   height: 100vh;
-  margin: 0;
-  padding: 0;
   background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%), radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%), radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%), radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%), radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
   background-blend-mode: screen;
 }
@@ -208,6 +207,9 @@ main .weather .CloseWeather {
   margin-left: 100px;
 }
 main .jeans {
+  position: fixed;
+  top: 50px;
+  left: 550px;
   display: flex;
   justify-content: center;
 }
