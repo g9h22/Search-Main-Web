@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=PT+Sans:wght@400;700&display=swap");
+* {
+  font-family: "Nanum Myeongjo", serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+main .weather .CloseWeather, main .toDoList .toDoSet .CloseMemo, main .nft .nftHover button {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: rgba(214, 116, 205, 0.437);
+  border: 0px;
+  border-radius: 50px;
+}
+
+main .popUp .weatherView, main .popUp .memoView, main .popUp .nftView {
+  width: 60px;
+  height: 40px;
+  color: white;
+  background-color: rgba(58, 58, 58, 0.642);
+  border: 0px;
+  border-radius: 50px;
+  font-size: 13px;
+}
+
+body {
+  margin: 0;
+  color: white;
+  size: 20px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%), radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%), radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%), radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%), radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+  background-blend-mode: screen;
+}
+
+main .nft {
+  display: none;
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+main .nft img {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+main .nft .nftHover {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+main .nft .nftHover button {
+  margin-left: 200px;
+}
+main .popUp {
+  width: 200px;
+  margin-top: 20px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+main .today {
+  position: fixed;
+  top: 0;
+  right: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .today .time {
+  display: flex;
+  justify-content: space-around;
+  font-size: 50px;
+}
+main .today .time .ampm {
+  margin-right: 10px;
+}
+main .today .date {
+  font-size: 25px;
+  margin-left: auto;
+}
+main .toDoList {
+  width: 200px;
+}
+main .toDoList .toDoSet {
+  display: none;
+}
+main .toDoList .toDoSet .toDo {
+  background-color: rgba(28, 28, 28, 0.506);
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+main .toDoList .toDoSet .CloseMemo {
+  margin-left: 240px;
+}
+main .toDoList .listAddBtn {
+  display: none;
+  position: absolute;
+  top: 110px;
+  left: 220px;
+  height: 20px;
+  background-color: white;
+  color: rgba(41, 28, 39, 0.695);
+  font-size: 15px;
+  font-weight: 700;
+  border: 0px;
+  border-radius: 9999px;
+}
+main .toDoList:hover .listAddBtn {
+  display: inline-block;
+}
+main .newToDo {
+  display: none;
+}
+main .newToDo .newList {
+  margin-top: 10px;
+  margin-left: 30px;
+  border: 0px;
+  border-radius: 50px;
+  font-size: 15px;
+  height: 18px;
+  width: 200px;
+}
+main .newToDo .newAddBtn {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: rgba(41, 28, 39, 0.437);
+  border: 0px;
+  border-radius: 50px;
+}
+main .chatGpt {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: rgba(235, 235, 235, 0.7294117647);
+  width: 650px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+}
+main .chatGpt svg {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+main .chatGpt .searchForm .search {
+  width: 500px;
+  height: 40px;
+  margin-right: 10px;
+  margin-bottom: 3px;
+  border: 0;
+  border-radius: 5px;
+  font-size: 20px;
+}
+main .chatGpt .searchForm .searchBtn {
+  width: 50px;
+  height: 40px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  background-color: rgba(235, 235, 235, 0.5137254902);
+}
+main .result {
+  display: none;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  width: 500px;
+  font-size: 20px;
+  padding: 10px;
+  background-color: rgba(28, 28, 28, 0.506);
+}
+main .weather {
+  display: none;
+  margin-top: 25px;
+  margin-left: 50px;
+}
+main .weather .CloseWeather {
+  margin-left: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

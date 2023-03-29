@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=PT+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "Nanum Myeongjo", serif;
+
+  font-family: "PT Sans", sans-serif;
+}
+%smallBtn {
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: rgba(214, 116, 205, 0.437);
+  border: 0px;
+  border-radius: 50px;
+}
+
+%btnStyle {
+  width: 60px;
+  height: 40px;
+  color: white;
+  background-color: rgba(58, 58, 58, 0.642);
+  border: 0px;
+  border-radius: 50px;
+  font-size: 13px;
+}
+
+body {
+  margin: 0;
+  color: white;
+  size: 20px;
+
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%),
+    radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%),
+    radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%),
+    radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
+
+  background-blend-mode: screen;
+}
+
+main {
+  // display: flex;
+  // justify-content: space-between;
+
+  .nft {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+
+    img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+    }
+
+    .nftHover {
+      position: absolute;
+      top: -10px;
+      left: 0;
+
+      a {
+        // background-color: rgba(95, 82, 92, 0.541);
+        // display: inline-block;
+        // width: 200px;
+        // height: 200px;
+        // margin-left: 10px;
+      }
+      button {
+        margin-left: 200px;
+        @extend %smallBtn;
+      } //x
+    }
+  }
+  .popUp {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    .nftView {
+      @extend %btnStyle;
+    }
+    .memoView {
+      @extend %btnStyle;
+    }
+    .weatherView {
+      @extend %btnStyle;
+    }
+  }
+  .today {
+    position: fixed;
+    top: 0;
+    right: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .time {
+      display: flex;
+      justify-content: space-around;
+      font-size: 50px;
+      .ampm {
+        margin-right: 10px;
+      }
+    }
+    .date {
+      font-size: 25px;
+      margin-left: auto;
+    }
+  }
+
+  .toDoList {
+    width: 200px;
+    .toDoSet {
+      display: none;
+      .toDo {
+        background-color: rgba(28, 28, 28, 0.506);
+        border-radius: 10px;
+        width: 200px;
+        padding: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+      }
+      .CloseMemo {
+        margin-left: 240px;
+        @extend %smallBtn;
+      }
+    }
+    .listAddBtn {
+      display: none;
+      position: absolute;
+      top: 110px;
+      left: 220px;
+
+      height: 20px;
+      background-color: white;
+      color: rgba(41, 28, 39, 0.695);
+      font-size: 15px;
+      font-weight: 700;
+      border: 0px;
+      border-radius: 9999px;
+    }
+
+    &:hover {
+      .listAddBtn {
+        display: inline-block;
+      }
+    }
+  }
+
+  .newToDo {
+    display: none;
+    .newList {
+      margin-top: 10px;
+      margin-left: 30px;
+      border: 0px;
+      border-radius: 50px;
+      font-size: 15px;
+      height: 18px;
+      width: 200px;
+    }
+    .newAddBtn {
+      width: 20px;
+      height: 20px;
+      color: white;
+      background-color: rgba(41, 28, 39, 0.437);
+      border: 0px;
+      border-radius: 50px;
+    }
+  }
+
+  .chatGpt {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+
+    background-color: #ebebebba;
+    width: 650px;
+
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    svg {
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      margin-top: 2px;
+    }
+    .searchForm {
+      .search {
+        width: 500px;
+        height: 40px;
+        margin-right: 10px;
+        margin-bottom: 3px;
+        border: 0;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+      .searchBtn {
+        width: 50px;
+        height: 40px;
+        // padding: 5px;
+        font-size: 15px;
+        border: 0;
+        border-radius: 15px;
+        background-color: #ebebeb83;
+      }
+    }
+  }
+  .result {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 500px;
+    font-size: 20px;
+    padding: 10px;
+
+    background-color: rgba(28, 28, 28, 0.506);
+  }
+  .weather {
+    display: none;
+    margin-top: 25px;
+    margin-left: 50px;
+    .CloseWeather {
+      @extend %smallBtn;
+      margin-left: 100px;
+    }
+  }
+}
