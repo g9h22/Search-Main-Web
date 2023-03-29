@@ -4,7 +4,7 @@
   font-family: "PT Sans", sans-serif;
 }
 
-main .weather .CloseWeather, main .toDoList .toDoSet .CloseMemo, main .nft .nftHover button {
+main .weather .CloseWeather, main .toDoList .toDoSet .CloseMemo, main .nft .CloseNft {
   width: 20px;
   height: 20px;
   color: white;
@@ -14,13 +14,13 @@ main .weather .CloseWeather, main .toDoList .toDoSet .CloseMemo, main .nft .nftH
 }
 
 main .popUp .weatherView, main .popUp .memoView, main .popUp .nftView {
-  width: 60px;
+  width: 75px;
   height: 40px;
   color: white;
   background-color: rgba(58, 58, 58, 0.642);
   border: 0px;
   border-radius: 50px;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 body {
@@ -28,7 +28,7 @@ body {
   color: white;
   size: 20px;
   height: 100vh;
-  width: 100vw;
+  width: auto;
   margin: 0;
   padding: 0;
   background: radial-gradient(ellipse at 20% 20%, #35234b 0%, transparent 70%), radial-gradient(ellipse at 60% 20%, #2975bf 0%, transparent 70%), radial-gradient(ellipse at 100% 20%, #3d54b1 0%, transparent 70%), radial-gradient(ellipse at 100% 100%, #9f3c54 0%, transparent 70%), radial-gradient(ellipse at 20% 100%, #362d6f 0%, transparent 70%);
@@ -41,23 +41,41 @@ main .nft {
   top: 80px;
   left: 0;
 }
+main .nft .CloseNft {
+  position: absolute;
+  margin-top: 0;
+  margin-left: 230px;
+}
 main .nft img {
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 40px;
+  margin-top: 25px;
 }
 main .nft .nftHover {
   position: absolute;
-  top: -10px;
+  display: none;
+  top: 0px;
   left: 0;
+  margin: 40px;
+  margin-top: 25px;
+  background-color: rgba(95, 82, 92, 0.541);
+  width: 200px;
+  height: 200px;
 }
-main .nft .nftHover button {
-  margin-left: 200px;
+main .nft .nftHover a {
+  font-size: larger;
+  color: aliceblue;
+}
+main .nft:hover .nftHover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .popUp {
-  width: 200px;
+  width: 280px;
   margin-top: 20px;
-  margin-left: 15px;
+  margin-left: 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -68,6 +86,7 @@ main .today {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 20px;
 }
 main .today .time {
   display: flex;
@@ -97,6 +116,7 @@ main .toDoList .toDoSet .toDo {
 }
 main .toDoList .toDoSet .CloseMemo {
   margin-left: 240px;
+  margin-top: 10px;
 }
 main .toDoList .listAddBtn {
   display: none;
@@ -183,7 +203,7 @@ main .result {
 main .weather {
   display: none;
   margin-top: 25px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 main .weather .CloseWeather {
   margin-left: 100px;

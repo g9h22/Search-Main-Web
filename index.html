@@ -9,21 +9,6 @@
   </head>
   <body>
     <main>
-      <div class="nft">
-        <img
-          src="https://i.seadn.io/gcs/files/bbb787a74c3a5845a2e10f9f6fadb289.png?auto=format&w=1000"
-          alt="nft"
-        />
-        <div class="nftHover">
-          <button class="CloseNft" onclick="onClickToggleNft(false)">x</button>
-          <!-- <a
-            href="https://opensea.io/assets/matic/0xcb0fe82c34e2ce106f76b0ed054e6f437acaa119/10"
-            target="_blank"
-            >더보기</a
-          > -->
-        </div>
-      </div>
-
       <div class="popUp">
         <button class="nftView" onclick="onClickToggleNft(true)">NFT</button>
         <button class="memoView" onclick="onClickToggleMemo(true)">
@@ -74,6 +59,21 @@
         </div>
       </div>
       <div class="result">결과</div>
+
+      <div class="nft">
+        <button class="CloseNft" onclick="onClickToggleNft(false)">x</button>
+        <img
+          src="https://i.seadn.io/gcs/files/bbb787a74c3a5845a2e10f9f6fadb289.png?auto=format&w=1000"
+          alt="nft"
+        />
+        <div class="nftHover">
+          <a
+            href="https://opensea.io/assets/matic/0xcb0fe82c34e2ce106f76b0ed054e6f437acaa119/10"
+            target="_blank"
+            >더보기</a
+          >
+        </div>
+      </div>
 
       <div class="weather">
         <button class="CloseWeather" onclick="onClickToggleWeather(false)">
